@@ -5,6 +5,7 @@ checkpoints/*
 iccv/
 .vscode/
 models/DepthPrompting/
-models/depth_anything_v2
+models/depth_anything_v2/
 models/iccv
 models/CSPN
+dataloader/__pycache__/
