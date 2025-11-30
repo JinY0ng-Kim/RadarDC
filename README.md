@@ -3,7 +3,8 @@ Accurate dense depth completion using sparse and elevation-ambiguous radar data 
 ### Our Key Contribution  
 - Leveraging a robust depth foundation model
 - Learning radar elevation features by exploiting similarity with MDE predictions
-- We empirically demonstrate that RadarDC achieves superior performance compared to existing state-of-the-art methods  
+- We empirically demonstrate that RadarDC achieves superior performance compared to existing state-of-the-art methods
+
 Monocular Depth Estimation Model : UniDepth V2 https://github.com/lpiccinelli-eth/UniDepth.git
 
 <img src="figure/qualitative" alt="cover" style="zoom:50%;" />
@@ -14,6 +15,14 @@ Monocular Depth Estimation Model : UniDepth V2 https://github.com/lpiccinelli-et
 | 80 m     | RadarNet (CVPR 2023)           | 4898.7      | 2179.3     |
 | 80 m     | Sparse-Beats-Dense (ECCV 2024) | 4609.6      | 1927.0     |
 | 80 m     | **Ours**                        | **4565.6**  | **1889.7**     |
+
+## 🔗Pre-trained Weight
+https://drive.google.com/file/d/1qVLrhaTNYOMJ1MXi_OkZwwhwPx0jxEqn/view?usp=sharing
+```
+RadarDC
+├── checkpoints
+│   ├── RadarDC_V6_best.pth
+```
 
 ## Dataset
 NuScenes Dataset : https://www.nuscenes.org/nuscenes
@@ -56,10 +65,4 @@ torchrun --nproc_per_node=8 train.py
 torchrun --nproc_per_node=8 test.py
 ```
 
-## 🔗Pre-trained Weight
-https://drive.google.com/file/d/1qVLrhaTNYOMJ1MXi_OkZwwhwPx0jxEqn/view?usp=sharing
-```
-RadarDC
-├── checkpoints
-│   ├── RadarDC_V6_best.pth
-```
+
