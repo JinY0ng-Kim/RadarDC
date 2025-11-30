@@ -72,4 +72,5 @@ torchrun --nproc_per_node=8 train.py
 torchrun --nproc_per_node=8 test.py
 ```
 
-
+## Contact
+Feel free to contact : valere2709@gmail.com
