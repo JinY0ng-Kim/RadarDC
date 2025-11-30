@@ -10,7 +10,7 @@ Accurate dense depth completion using sparse and elevation-ambiguous radar data 
 **Monocular Depth Estimation Model:** [UniDepth V2](https://github.com/lpiccinelli-eth/UniDepth.git)
 
 ### Qualitative Result
-<img src="figure/qualitative" alt="cover" style="zoom:50%;" />
+<img src="figure/qualitative.png" alt="cover" style="zoom:50%;" />
 
 ### Quantitative Results
 | Distance | Method                         | RMSE (mm) ↓ | MAE (mm) ↓ |
