@@ -1,14 +1,18 @@
 # RadarDC
-Accurate dense depth completion using sparse and elevation-ambiguous radar data combined with RGB images  
-### Our Key Contribution  
-- Leveraging a robust depth foundation model
-- Learning radar elevation features by exploiting similarity with MDE predictions
-- We empirically demonstrate that RadarDC achieves superior performance compared to existing state-of-the-art methods
+Accurate dense depth completion using sparse and elevation-ambiguous radar data combined with RGB images.
 
-Monocular Depth Estimation Model : UniDepth V2 https://github.com/lpiccinelli-eth/UniDepth.git
+### Our Key Contributions
+- Leveraging a robust depth foundation model for accurate dense depth completion.
+- Learning radar elevation features by exploiting similarity with MDE predictions.
+- Empirically demonstrating that RadarDC achieves superior performance compared to existing state-of-the-art methods.
 
+
+**Monocular Depth Estimation Model:** [UniDepth V2](https://github.com/lpiccinelli-eth/UniDepth.git)
+
+### Qualitative Result
 <img src="figure/qualitative" alt="cover" style="zoom:50%;" />
 
+### Quantitative Results
 | Distance | Method                         | RMSE (mm) ↓ | MAE (mm) ↓ |
 |----------|--------------------------------|-------------|------------|
 | 80 m     | RC-PDA (CVPR 2021)             | 7692.8      | 3713.6     |
@@ -17,7 +21,7 @@ Monocular Depth Estimation Model : UniDepth V2 https://github.com/lpiccinelli-et
 | 80 m     | **Ours**                        | **4565.6**  | **1889.7**     |
 
 ## 🔗Pre-trained Weight
-https://drive.google.com/file/d/1qVLrhaTNYOMJ1MXi_OkZwwhwPx0jxEqn/view?usp=sharing
+[Google Drive Link](https://drive.google.com/file/d/1qVLrhaTNYOMJ1MXi_OkZwwhwPx0jxEqn/view?usp=sharing)
 ```
 RadarDC
 ├── checkpoints
@@ -25,10 +29,10 @@ RadarDC
 ```
 
 ## Dataset
-NuScenes Dataset : https://www.nuscenes.org/nuscenes
+**NuScenes Dataset:** [NuScenes](https://www.nuscenes.org/nuscenes)
 
-We used NuScense official data split with RadarNet’s data loading approach  
-Thanks for RadarNet : https://github.com/nesl/radar-camera-fusion-depth.git
+- We used the official NuScenes data split following RadarNet’s data loading approach.  
+- Thanks to RadarNet: [Radar-Camera Fusion Depth](https://github.com/nesl/radar-camera-fusion-depth.git)
 ```
 bash _Scripts/dataset_nuScenes_Train.sh
 bash _Scripts/dataset_nuScenes_Test.sh
@@ -55,6 +59,9 @@ conda create -n radardc python=3.10.18
 conda activate radardc
 pip install -r requirements.txt
 ```
+Please follow the instructions in the UniDepth V2 repository to complete the setup:  
+https://github.com/lpiccinelli-eth/UniDepth.git
+
 ### Training
 We trained our model on 8 H200 GPUs  
 ```
