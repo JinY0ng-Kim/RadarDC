@@ -19,6 +19,8 @@ Accurate dense depth completion using sparse and elevation-ambiguous radar data 
 | 80 m     | RadarNet (CVPR 2023)           | 4898.7      | 2179.3     |
 | 80 m     | Sparse-Beats-Dense (ECCV 2024) | 4609.6      | 1927.0     |
 | 80 m     | **Ours**                        | **4565.6**  | **1889.7**     |
+| 80 m     | RadarCam-Depth (ICRA 2024) | 3948.0      | 1689.7     |
+| 80 m     | TacoDepth (CVPR 2025) | 3324.8      | 1492.4     |
 
 ## 🔗Pre-trained Weight
 [Google Drive Link](https://drive.google.com/file/d/1qVLrhaTNYOMJ1MXi_OkZwwhwPx0jxEqn/view?usp=sharing)
